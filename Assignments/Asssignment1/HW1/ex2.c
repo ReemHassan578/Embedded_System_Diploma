@@ -6,7 +6,7 @@ int main ()
 	printf("Enter a integer:");
 	fflush(stdout);
 	scanf("%d",&number);
-	printf("Sum: %d",number);
+	printf("You entered: %d",number);
 
 	return 0;
 }
