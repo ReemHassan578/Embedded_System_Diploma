@@ -1,0 +1,18 @@
+main.o
+00000000 D GPIO_CRH
+00000004 D GPIO_ODR
+00000000 T main
+00000008 D RCC_APB2ENR
+
+startup.o
+         U main
+00000000 t reset
+00000006 t Vector_handler
+
+lab2.elf
+080000cc D GPIO_CRH
+080000d0 D GPIO_ODR
+08000050 T main
+080000d4 D RCC_APB2ENR
+080000c4 t reset
+080000ca t Vector_handler
