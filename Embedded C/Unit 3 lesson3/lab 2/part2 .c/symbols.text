@@ -1,0 +1,42 @@
+startup.o
+00000088 W Bus_Fault
+00000088 T default_handler
+         U E_bss
+         U E_data
+         U E_text
+00000088 W H_fault_Handler
+         U main
+00000088 W MM_Fault_Handler
+00000088 W NMI_Handler
+00000000 T reset
+         U S_bss
+         U S_data
+         U stack_top
+00000088 W Usage_Fault_Handler
+00000000 D vectors
+
+main.o
+00000000 D GPIO_CRH
+00000004 D GPIO_ODR
+00000000 T main
+00000008 D RCC_APB2ENR
+
+lab2.elf
+080000d8 W Bus_Fault
+080000d8 T default_handler
+2000000c D E_bss
+2000000c D E_data
+08000158 T E_text
+20000000 D GPIO_CRH
+20000004 D GPIO_ODR
+080000d8 W H_fault_Handler
+080000e4 T main
+080000d8 W MM_Fault_Handler
+080000d8 W NMI_Handler
+20000008 D RCC_APB2ENR
+08000050 T reset
+2000000c D S_bss
+20000000 D S_data
+2000100c D stack_top
+080000d8 W Usage_Fault_Handler
+08000000 T vectors
